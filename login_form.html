@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login form</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/bootstrap-theme.css">
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/banking.js"></script>
+    <link rel="shortcut icon" href="static/img/favicon.png">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-offset-3 col-md-6">
+            <form action="http://google.com" class="form-horizontal">
+                <img src="static/img/bank_logo.jpg">
+                <span class="heading">Login to your account</span>
+                <div class="form-group">
+                    <input name="login" type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="form-group help">
+                    <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <i class="fa fa-lock"></i>
+                    <a href="#" class="fa fa-question-circle"></a>
+                </div>
+                <div class="form-group">
+                    <div class="main-checkbox">
+                        <input type="checkbox" value="none" id="checkbox1" name="check"/>
+                        <label for="checkbox1"></label>
+                    </div>
+                    <span class="text">Remember me</span>
+                    <input value="Sign in" type="submit" class="btn btn-default"
+                           onclick="return submit_ (this.form.login.value, this.form.password.value)">
+                </div>
+                <div class="alert alert-success" role="alert">test@test.com / 123</div>
+            </form>
+        </div>
+
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+</body>
+</html>
